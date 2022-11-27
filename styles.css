@@ -162,6 +162,13 @@ button:hover {
     transition: color 0.4s;
 }
 
+button:active {
+    background-color: var(--main-color);
+    color: black;
+    transition: background-color 0.8s;
+    transition: color 0.4s;
+}
+
 button a {
     text-decoration: none;
     font-family: 'Oswald', sans-serif;
