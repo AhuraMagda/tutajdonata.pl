@@ -147,8 +147,8 @@ h3 {
 }
 
 button {
-    background-color: black;
-    padding: 8px 11px 10px 11px;
+    background-color: #8f3736;
+    padding: 8px 0px;
     margin-bottom: 40px;
     border: none;
     letter-spacing: 0.1em;
@@ -157,14 +157,12 @@ button {
 
 button:hover {
     background-color: var(--main-color);
-    color: black;
     transition: background-color 0.8s;
     transition: color 0.4s;
 }
 
 button:active {
-    background-color: var(--main-color);
-    color: black;
+    background-color: #ffa114;
     transition: background-color 0.8s;
     transition: color 0.4s;
 }
@@ -175,11 +173,13 @@ button a {
     font-weight: 700;
     font-size: 15px;
     color: rgb(255, 255, 255);
+    padding: 8px 10px 8px 10px;
 }
 
 button a:hover {
     text-decoration: none;
 }
+
 
 
 /* Contact */
@@ -275,4 +275,7 @@ footer {
     .circle {
         margin-bottom: 50px;
     }
+    button {
+        background-color: black;
+    } 
 }
