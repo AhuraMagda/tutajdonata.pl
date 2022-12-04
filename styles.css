@@ -87,6 +87,7 @@ h3 {
 .about-me p {
     padding-top: 10px;
     padding-bottom: 20px;
+    max-width: 850px;
 }
 
 
