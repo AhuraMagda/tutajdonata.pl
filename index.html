@@ -1,74 +1,283 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="keywords" content="self development, self care, rozwój osobisty, coaching, coach, meditation"> 
-        <meta name="author" content="AhuraMagda">
-        <meta name="description" content="strona oferująca usługi coachingowe">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>INSIDE TRAVEL rozwój osobisty</title>
-        <link rel="stylesheet" href="./styles.css">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Raleway:ital,wght@0,300;0,400;0,500;1,200&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    </head>
-    
-    <body>
-        <header>
-            <div>
-                <h1>INSIDE TRAVEL</h1>
-                <h2>Rozwój osobisty</h2>
-            </div>
-        </header>
+* {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    box-sizing: border-box;
+    margin: 0px;
+}
 
-        <section class="about-me">
-            <img src="./images/donata-square.jpeg" alt="zdjęcie doradcy rozwoju osobowego Donaty Dróżdż">
-            <h3>O mnie</h3>
-            <p >Nazywam się Donata. Lubię się śmiać i&nbsppodróżować. Jestem pasjonatką rozwoju osobistego i&nbspduchowego. Moje hobby to uwalnianie się od ograniczających mnie przekonań i&nbsplikwidowanie z&nbspżycia wszystkiego co związane z:&nbsp"powinno się" i&nbsp"wypada".</p>
-        </section>
+:root {
+    --main-color: #ffb649;
+    --add-color1: rgb(97, 150, 97);
+    --add-color2: #01400b;
+}
 
-        <section class="main-content">
-            <div>
-                <ul>
-                    <li id="shade1" class="animate__animated animate__lightSpeedInLeft animate__delay-1s">Masz niskie poczucie własnej&nbspwartości?</li>
-                    <li id="shade2" class="animate__animated animate__lightSpeedInLeft animate__delay-2s">Często porównujesz się&nbspz&nbspinnymi? </li>
-                    <li id="shade3" class="animate__animated animate__lightSpeedInLeft animate__delay-3s">Nie czujesz się do&nbspkońca&nbspszczęśliwy/a?</li>
-                </ul>
-            </div>
 
-            <div class="nowrap">
-                <img src="./images/develo.jpg" alt="grafika medytującej kobiety">
-            </div>
+/* Header */
 
-            <div class="nowrap">
-                <span class="circle">
-                    <h3>DARMOWY EBOOK</h3>
-                    <p>Zapraszam Cię do poznania mojej historii i pobrania krótkiego ebooka na temat mojej drogi do siebie.</p> 
-                    <button class="animate__animated animate__pulse animate__delay-4s animate__infinite"><a href="https://drive.google.com/uc?export=download&id=1RTUwazf77FJwhNShf2B-9V3oDzu3UxKN">POBIERZ</a></button>
-                </span>
-            </div>
-        </section>
+header {
+    height: 350px;
+    background-image: url(./images/background.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
-        <section class="contact">
-            <p>Masz jakieś pytania? Pisz śmiało!</p>
-            <h3>Kontakt</h3>
-            <figure>
-                <a href="mailto:email@gmail.com"><img src="./images/m-icon.png" alt="ikonka email"></a>
-                <figcaption><a href="mailto:kontakt@tutajdonata.pl">kontakt@tutajdonata.pl</a></figcaption>
-            </figure>
-            <figure>
-                <a href="https://www.instagram.com/_tutajdonata/"><img src="./images/ig-icon.png" alt="ikonka instagram"></a>
-                <figcaption><a href="https://www.instagram.com/_tutajdonata/">@_tutajdonata</a></figcaption> 
-            </figure>
-        </section>
+header div {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top: solid 10px rgba(0, 0, 0, 0.1);
+    border-bottom: solid 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+}
 
-        <footer>
-            <p>Website by <a href="https://github.com/AhuraMagda">AhuraMagda</a></p>
-            <p><a href="https://www.freepik.com/free-vector/hand-drawn-mindfulness-concept-with-characters_16692662.htm#query=meditation&position=15&from_view=search&track=sph">Image by pikisuperstar</a> on Freepik</p>
-        </footer>
+h1 {
+    color: var(--main-color);
+    font-size: 60px;
+    padding: 0px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
 
-    </body>
-</html>
+h2 {
+    padding-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    border-radius: 10px;;
+    color: white;
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+}
+
+
+/* About me */
+
+.about-me {
+    background-color: var(--add-color1);
+    padding: 30px 30px 20px 30px;
+    align-items: center;
+    border-bottom: solid  10px #87ab87;
+    line-height: 1.5em;
+    min-height: 200px;
+}
+
+.about-me img {
+    height: 150px;
+    margin-right: 30px;
+    border-radius: 50%;
+    float: left;    
+    -webkit-shape-outside: circle();    
+    shape-outside: circle();
+    border: solid 4px var(--main-color);
+}
+
+.about-me h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+.about-me p {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+
+/* Main content */
+
+.main-content {
+    display: flex;
+}
+
+.main-content div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content ul {
+    list-style-type: none;
+    font-size: 25px;
+    padding: 40px 0px;
+}
+
+.main-content li {
+    padding: 20px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.main-content img {
+    width: 100%;
+    min-height: 380px;
+    min-width: 378px
+}
+
+.circle {
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    border: solid 10px #fbc575;
+
+}
+
+.circle h3 {
+    padding: 65px 0px 15px 0px;
+    font-size: 28px;
+}
+
+.circle p {
+    padding: 0px 35px 10px 30px;
+    text-align: center;
+    line-height: 1.4em;
+}
+
+button {
+    background-color: black;
+    padding: 8px 0px;
+    margin-bottom: 40px;
+    border: none;
+    letter-spacing: 0.1em;
+    border: solid 1px black;
+}
+
+button:hover {
+    background-color: var(--main-color);
+    transition: background-color 0.8s;
+    transition: color 0.4s;
+    border: solid 1px white;
+}
+
+button:active {
+    background-color: #ffa114;
+    transition: background-color 0.8s;
+    transition: color 0.4s;
+    border: solid 1px white;
+}
+
+button a {
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    padding: 8px 10px 8px 10px;
+}
+
+button a:hover {
+    text-decoration: none;
+}
+
+
+
+/* Contact */
+
+.contact {
+    background-color: var(--add-color2);
+    color: white;
+    padding: 35px 40px 19px 40px;
+    border-top: solid 12px #306037;
+
+}
+
+.contact h3 {
+    padding: 30px 0px 20px 0px;
+
+}
+
+figure {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.contact img {
+    height: 40px;
+    margin-right: 15px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    transition: all 0.3s;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: black;
+    color: white;
+    font-size: 8px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Media Queries */
+
+@media screen and (min-width: 751px) and (max-width: 1007px) {
+    .about-me {
+        border-bottom: none;
+    }
+
+    #shade1 {
+        background-color: hsl(36deg 100% 74%);
+    }
+    #shade2 {
+        background-color: hsl(36deg 100% 79%);
+    }
+    #shade3 {
+        background-color: hsl(36deg 100% 84%);
+    }
+
+    .main-content {
+        flex-wrap: wrap;
+    }
+    .main-content ul {
+        width: 100%;
+        background-color: hsl(36deg 100% 69%);
+        padding: 50px 0px 0px 0px;
+    }
+    div.nowrap {
+        width: 50%;
+    }
+    .main-content img {
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .main-content {
+        flex-wrap: wrap;
+    }
+    .main-content img {
+        display: none;
+    }
+    .circle {
+        margin-bottom: 50px;
+    }
+    button {
+        background-color: black;
+    } 
+}
