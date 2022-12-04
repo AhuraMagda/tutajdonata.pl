@@ -147,24 +147,26 @@ h3 {
 }
 
 button {
-    background-color: #8f3736;
+    background-color: black;
     padding: 8px 0px;
     margin-bottom: 40px;
     border: none;
     letter-spacing: 0.1em;
-    border: solid 1px white;
+    border: solid 1px black;
 }
 
 button:hover {
     background-color: var(--main-color);
     transition: background-color 0.8s;
     transition: color 0.4s;
+    border: solid 1px white;
 }
 
 button:active {
     background-color: #ffa114;
     transition: background-color 0.8s;
     transition: color 0.4s;
+    border: solid 1px white;
 }
 
 button a {
@@ -279,3 +281,5 @@ footer {
         background-color: black;
     } 
 }
+
+
