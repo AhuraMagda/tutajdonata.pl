@@ -1,5 +1,5 @@
 # Inside Travel Website
-This is a personal website made for Donata Dróżdż.
+This is a simple HTML + CSS personal website made for Donata Dróżdż.
 
 ## Table of contents
 - [Overview](#overview)
